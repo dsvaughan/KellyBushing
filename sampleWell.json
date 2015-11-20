@@ -1,0 +1,158 @@
+{
+	"_id": ObjectId("563bba59efc3fd8d9474d990"),
+	"well": {
+		"wellUWI": "4232931120",
+		"wellName": "MILES 1",
+		"operatorName": "PARKER&PARSLEY DEV",
+		"leaseName": "MILES",
+		"wellNumber": "1",
+		"fieldName": "SPRABERRY",
+		"fieldCode": "047307",
+		"wellClass": "1",
+		"initialWellClass": "6",
+		"wellStatus": "OIL PRODUCER",
+		"GL": 0,
+		"KB": 2761,
+		"elevationUOM": "feet",
+		"permitNumber": "",
+		"permitDate": "",
+		"provinceCode": "430",
+		"changeHistory": {
+			"createDate": "09/23/2015",
+			"createSource": "IHS",
+			"lastModifiedDate": ISODate("2015-11-10T21:17:20.039Z"),
+			"lastModifiedSource": "IHS"},
+		"security": null,
+		"surfaceLocation": {
+			"country": "United States",
+			"stateProvince": "Texas",
+			"county": "MIDLAND",
+			"latitude": 31.93803,
+			"longitude": -102.02938,
+			"latLongSource": "IHSE LATITUDE LONGITUDE",
+			"datum": 0,
+			"projection": 0,
+			"footageLocation": {
+				"northSouthFootage": 660,
+				"northSouthDirection": "FS",
+				"eastWestFootage": 660,
+				"eastWestDirection": "FE",
+				"footageReference": "TEXAS SECTIO",
+				"xCoordinate": 0,
+				"yCoordinate": 0,
+				"footageUOM": "feet",
+				"zoneCode": "",
+				"projection": ""
+			},
+			"congressionalCarterLocation": null,
+			"texasLocation": {
+				"railroadDistrict": "08",
+				"blockLeagueNumber": "39",
+				"blockLeagueIndicator": "B",
+				"blockFraction": "",
+				"sectionLaborNumber": "12",
+				"sectionLaborIndicator": "S",
+				"sectionFraction": "",
+				"lotNumber": "",
+				"townshipNumber": "2.0",
+				"townshipDirection": "S",
+				"surveyName": "T&P RR CO",
+				"abstractNumber": "662"
+			},
+			"offshoreLocation": null,
+			"locationFromMonument": null
+		},
+		"boreholes": [{
+			"uwi": "423293112000",
+			"TD": 9650,
+			"TVD": 0,
+			"PBTD": 0,
+			"depthDatumElevation": 0,
+			"depthDatumUOM": null,
+			"formationCodeAtTD": "451WFMP",
+			"formationAtTD": "WOLFCAMP",
+			"bottomLatitude": 0,
+			"bottomLongitude": 0,
+			"bottomLatLongSource": "I",
+			"spudDate": "12/09/1982",
+			"directionIndicator": "Vertical",
+			"completions": [{
+				"uwi": "42329311200000",
+				"perforationTop": 0,
+				"perforationBottom": 0,
+				"completionDate": "02/20/1983",
+				"producingFormationCode": "452SPRB",
+				"producingFormation": "SPRABERRY"
+			}],
+			"formations": [{
+				"formationCode": "452SPRBU",
+				"formationName": "SPRABERRY UPPER",
+				"formationTop": 7687,
+				"formationBtm": 0,
+				"sourceOfData": "3"
+			},
+			{
+				"formationCode": "452SPRBL",
+				"formationName": "SPRABERRY LOWER",
+				"formationTop": 8356,
+				"formationBtm": 0,
+				"sourceOfData": "3"
+			},
+			{
+				"formationCode": "452DEAN",
+				"formationName": "DEAN",
+				"formationTop": 9060,
+				"formationBtm": 0,
+				"sourceOfData": "3"
+			}],
+			"logs": [{
+				"runNumber": 1,
+				"logCode": "NE",
+				"logName": "NEUTRON",
+				"logTopDepth": 0,
+				"logBtmDepth": 0
+			}],
+			"dst": [],
+			"ini
+tialPotentials": [{
+				"testNumber": "001",
+				"formationCode": "452SPRB",
+				"formationName": "SPRABERRY",
+				"intervalTop": 8431,
+				"intervalBtm": 9522,
+				"oilVolume": 60,
+				"oilVolumeUOM": "BPD",
+				"gasVolume": 0,
+				"gasVolumeUOM": "",
+				"waterVolu
+me": 140,
+				"waterVolumeUOM": "BB",
+				"flowingTubingPressure": 0,
+				"flowingTubingPressureUOM": "psi",
+				"btmHolePressure": 0,
+				"btmHolePressureUOM": "psi",
+				"testDuration": 24,
+				"testDurationUOM": "hours",
+				"chokeSize": 0,
+				"chokeSizeUOM": "1/64 inch",
+				"btmHoleTemp": 0,
+				"btmHoleTempUOM": "F",
+				"methodOfProduction": "P",
+				"grossIntervalNote": "G",
+				"ipPerfo
+rations": [{
+					"testNumber": "001",
+					"perforationTop": 8431,
+					"perforationBtm": 8637
+				},
+				{
+					"testNumber": "001",
+					"perfo
+rationTop": 9072,
+					"perforationBtm": 9522
+				}]
+			}],
+			"productionTests": []
+		}]
+	}
+}

@@ -1,0 +1,88 @@
+extends layout
+
+block headjs
+
+
+block content
+  br
+  .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+    form.form-inline(id='queryForm' ,method='post', action='/query')
+      .panel.panel-default
+        .panel-body
+          input.form-control(type='hidden', name='wellID', value=wellID)
+          .container-fluid
+            .row
+              .form-group.col-sm-1
+                label Well Name
+              .form-group.col-sm-3
+                input.form-control(type='text', name='well.wellName', value=wellName)
+              .form-group.col-sm-1
+                label API
+              .form-group.col-sm-3
+                input.form-control(type='text', name='well.wellUWI', value= wellUWI)
+              .form-group.col-sm-1
+                label Field
+              .form-group.col-sm-3
+                input.form-control(type='text', name='well.fieldName', value= fieldName)
+            .row
+              .form-group.col-sm-1
+                label Operator
+              .form-group.col-sm-3
+                input.form-control(type='text', name='well.operatorName', value= operatorName)
+              .form-group.col-sm-1
+                label State
+              .form-group.col-sm-3
+                input.form-control(type='text', name='well.surfaceLocation.stateProvince', value=stateProvince)
+              .form-group.col-sm-1
+                label Surface Lat
+              .form-group.col-sm-3
+                input.form-control(type='text', name='well.surfaceLocation.latitude', value=latitude)          
+            .row
+              .form-group.col-sm-1
+                label County
+              .form-group.col-sm-3
+                input.form-control(type='text', name='well.surfaceLocation.county', value=county)
+              .form-group.col-sm-1
+                label Country
+              .form-group.col-sm-3
+                input.form-control(type='text', name='well.surfaceLocation.country', value=country)
+              .form-group.col-sm-1
+                label Surface Long
+              .form-group.col-sm-3
+                input.form-control(type='text', name='well.surfaceLocation.longitude', value=longitude)           
+  
+      ul.nav.nav-tabs
+        li.active
+          a(data-toggle='tab', href='#home') Header
+        li
+          a(data-toggle='tab', href='#menu1') Logs
+        li
+          a(data-toggle='tab', href='#menu2') Directional Survey
+      .tab-content
+        #home.tab-pane.fade.in.active
+          br
+          .panel.panel-default
+            .panel-heading Borehole: #{boreholeUWI}
+            .panel-body
+              .row
+                .form-group.col-sm-1
+                  label Lease Name
+                .form-group.col-sm-3
+                  input.form-control(type='text', name='well.leaseName', value=leaseName)
+                .form-group.col-sm-1
+                  label Well Number
+                .form-group.col-sm-3
+                  input.form-control(type='text', name='well.wellNumber', value= wellNumber)
+                .form-group.col-sm-1
+                  label Borehole API
+                .form-group.col-sm-3
+                  input.form-control(type='text', name='well.boreholes.boreholeUWI', value= boreholeUWI)
+        #menu1.tab-pane.fade
+          br
+
+        #menu2.tab-pane.fade
+          h3 Directional Survey
+          p Some content in directional survey.  
+            
+            
+      button.btn.btn-default(type='submit') Query          
