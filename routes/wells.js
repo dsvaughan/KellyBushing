@@ -28,11 +28,15 @@ router.get('/', function(req, res, next)
 			if(err) 
 				{console.log('wells.js/router.get myWells.exec : ' + err)};
 
+			var wellUWI = data[0].well.wellUWI;
+			var fWellUWI = wellUWI.substring(0,2)+'-'+wellUWI.substring(2,5)+'-'+wellUWI.substring(5,10);
+
 			res.render('well-page', {
 				title: 'Wells',
 				wellID: data[0]._id,
 				wellName: data[0].well.wellName,
 				wellUWI: data[0].well.wellUWI,
+				fWellUWI: fWellUWI,
 				fieldName: data[0].well.fieldName,
 				operatorName: data[0].well.operatorName,
 				stateProvince: data[0].well.surfaceLocation.stateProvince,

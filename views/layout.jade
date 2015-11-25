@@ -30,10 +30,9 @@ html
       script.
         $(document).ready(function(){
           $('ul.nav-sidebar > li > a').click(function(){
-            var xxx = $(this).attr('id');
-            alert(xxx);
+            var vClickedMenuItem = $(this).attr('id');
             $('ul.nav-sidebar > li').removeClass('active');
-            $('a#' + xxx).parent('li').addClass('active');
+            $('a#' + vClickedMenuItem).parent('li').addClass('active');
           });
         });
 
